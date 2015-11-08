@@ -1,37 +1,46 @@
 #include<string>
 #include<vector>
+#include<list>
+#include<climits>
 #include<set>
+#include<unordered_set>
 using namespace std;
-class ShortestPath
-{
-	char** graph;
-	vector<int> completeNode;
-	set<int,int> processingNode;
-	//第一项是
-	unordered_set<int,pair<int,int>> knownNode;
-	map<int,vector<int>> predecessorNode;
-
-	//i -> j
-	void relax(int i, int j)
+//不用最短路径，BFS即可
+class Solution {
+	int depth = INT_MAX;
+	list<vector<int>> result;
+	vector<int> tmp;
+	void bfsPrint(char** graph, int start, int end, set<int> s, int depth = 0)
 	{
-		int weight = graph[i][j];
-		if(weight == 1)
+		tmp.push_back(start);
+
+		s.erase(start);
+		set<int> toTraverse;
+		for(auto it = s.begin(); it != s.end(); )
 		{
-			if(processingNode[i] != -1)
+			if(graph[start][*it] == 1)
 			{
-				processingNode[i] = 
+				toTraverse.insert(*it);
+				if(*it == end)
+				{
+					this->depth = depth;
+					result.push_front(tmp);
+					result.begin()->push_back(end);
+					tmp.pop_back();
+					return;
+				}
+				it = s.erase(it);
 			}
 		}
+		if(depth < this->depth)
+		{
+			for(auto node : toTraverse)
+			{
+				bfsPrint(graph, node, end, s,depth + 1);
+			}
+		}
+		tmp.pop_back();
 	}
-	public:
-	ShortestPath(char** _graph):graph(_graph){}
-
-	vector<vector<int>> getPath()
-	{
-
-	}	
-};
-class Solution {
 	bool isContiguous(string a, string b)
 	{
 		int i = 0;
@@ -44,7 +53,11 @@ class Solution {
 	}
 	char** wordGraph(const vector<string>& vec)
 	{
-		char** graph = new char[vec.size()][vec.size()];
+		char** graph = new char*[vec.size()];
+		for(int i = 0;i<vec.size();i++)
+		{
+			graph[i] = new char[vec.size()];
+		}
 		for(int i = 0; i < vec.size(); i++)
 		{
 			graph[i][i] = 0;
@@ -65,6 +78,7 @@ class Solution {
 	public:
 	vector<vector<string>> findLadders(string beginWord, string endWord, unordered_set<string> &wordList) {
 		//思路：构成图，然后找最短路径
+		vector<vector<string>> res;
 		vector<string> vec;
 		vec.push_back(beginWord);
 		vec.insert(vec.end(), wordList.begin(), wordList.end());
@@ -73,5 +87,33 @@ class Solution {
 		char** graph = wordGraph(vec);
 
 		//运行最短路径算法
+		set<int> startSet;
+		for(int i = 0;i<vec.size();i++)
+		{
+			startSet.insert(i);
+		}
+		this->bfsPrint(graph,0,vec.size() - 1,startSet);
+		
+		//构造结果
+		for(auto& mvec : this->result)
+		{
+			vector<string> tmp;
+			for(auto i : mvec)
+			{
+				tmp.push_back(vec[i]);
+			}
+			res.push_back(tmp);
+		}
 	}
 };
+
+int main()
+{
+	vector<vector<string>> param = 
+	{
+		    {"hit","hot","dot","dog","cog"},
+			{"hit","hot","lot","log","cog"}
+	};
+	string start = "hit";
+	string end = "cog";
+}
