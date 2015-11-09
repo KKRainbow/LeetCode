@@ -10,6 +10,7 @@ class Solution {
 	int depth = INT_MAX;
 	list<vector<int>> result;
 	vector<int> tmp;
+    void fastBfsPrint();
 	void bfsPrint(char** graph, int start, int end, set<int> s, int depth = 0)
 	{
 		tmp.push_back(start);
