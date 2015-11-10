@@ -38,11 +38,8 @@ class Solution {
     }
     void fastBfsPrint(int start, int end)
     {
-        set<int> all;
-        for(int i = 0;i<this->graph.size();i++)
-        {
-            all.insert(i);
-        }
+        int one = 1;
+        vector<int> all(this->graph.size(),one);
         vector<int> toTraverse;
         toTraverse.push_back(start);
         bool flag = false;
@@ -53,7 +50,7 @@ class Solution {
             auto tmp = toTraverse;
 			for(auto origin : toTraverse)
 			{
-				all.erase(origin);
+				all[origin] = 0;
 			}
             toTraverse.clear();
             if(tmp.size() == 0)
@@ -65,7 +62,7 @@ class Solution {
                 buildNodeGraph(node,all);
                 for(auto peer : this->graph[node])
                 {
-                    if (all.find(peer) != all.end())
+                    if (all[peer])
                     {
                         this->predecessor[peer].insert(node);
                         toTraverse.push_back(peer);
@@ -82,32 +79,36 @@ class Solution {
     }
 	bool isContiguous(const string& a, const string& b)
 	{
-        int size = a.size();
 		int count = 0;
-		auto ai = a.begin();
-		auto bi = b.begin();
+		auto ai = a.c_str();
+		auto bi = b.c_str();
+		/*
 		for(int i = 0;i<size;i++)
 		{
 			if(*ai++ != *bi++)count++;
 			if(count > 1)return false;
 		}
 		return count == 1;
-		/*
-		while(i < size && a[i] == b[i])i++;
+		*/
+		while(*ai && *ai++ == *bi++);
 		//此处i是否可能等于size  - 1呢，如果等于的话说明两个字符串完全相等。
 		//先假设没有完全相等的字符串吧。
-		i++;
-		while(i < size && a[i] == b[i])i++;
-		return i ==size; 
-		*/
+		while(*ai && *ai++ == *bi++);
+		return *ai == 0;
 	}
 
-    void buildNodeGraph(int node, set<int>& alter)
+    void buildNodeGraph(int node, const vector<int>& alter)
     {
         if(this->graph[node].size() != 0)return;
+        int i = 0;
         for(auto& to : alter)
-            if(isContiguous(this->wordList[to],this->wordList[node]))
-                this->graph[node].push_back(to);
+        {
+            if(to && isContiguous(this->wordList[i],this->wordList[node]))
+            {
+                this->graph[node].push_back(i);
+            }
+            i++;
+        }
     }
 
 	public:
