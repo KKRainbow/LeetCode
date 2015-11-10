@@ -43,24 +43,18 @@ class Solution {
         {
             all.insert(i);
         }
-        set<int> toTraverse;
-        toTraverse.insert(start);
+        vector<int> toTraverse;
+        toTraverse.push_back(start);
         bool flag = false;
         int depth = 0;
 
         while(!flag)
         {
-            set<int> tmp = toTraverse;
-            set<int> tmpAll;
-            //set_difference(all.begin(),all.end(),toTraverse.begin(),toTraverse.end(),inserter(tmpAll,tmpAll.begin()));
-            for(auto& origin:all)
-            {
-                if(toTraverse.find(origin) == toTraverse.end())
-                {
-                    tmpAll.insert(origin);
-                }
-            }
-            all = tmpAll;
+            auto tmp = toTraverse;
+			for(auto origin : toTraverse)
+			{
+				all.erase(origin);
+			}
             toTraverse.clear();
             if(tmp.size() == 0)
                 flag = true;
@@ -68,13 +62,13 @@ class Solution {
                 depth++;
             for(auto node : tmp)
             {
-                this->buildNodeGraph(node,all);
+                buildNodeGraph(node,all);
                 for(auto peer : this->graph[node])
                 {
                     if (all.find(peer) != all.end())
                     {
                         this->predecessor[peer].insert(node);
-                        toTraverse.insert(peer);
+                        toTraverse.push_back(peer);
                     }
                     if (peer == end)
                         flag = true;
@@ -86,62 +80,26 @@ class Solution {
         tmpAnswer.resize(depth + 1);
         buildAnswer(start,end,depth);
     }
-	void bfsPrint(char** graph, int start, int end, set<int> s, int depth = 0)
+	bool isContiguous(const string& a, const string& b)
 	{
-		tmp.push_back(start);
-
-		s.erase(start);
-		set<int> toTraverse;
-		for(auto it = s.begin(); it != s.end(); )
-		{
-			if(graph[start][*it] == 1)
-			{
-				toTraverse.insert(*it);
-				if(*it == end)
-				{
-					this->depth = depth;
-					result.push_front(tmp);
-					result.begin()->push_back(end);
-					tmp.pop_back();
-					return;
-				}
-				it = s.erase(it);
-			}
-		}
-		if(depth < this->depth)
-		{
-			for(auto node : toTraverse)
-			{
-				bfsPrint(graph, node, end, s,depth + 1);
-			}
-		}
-		tmp.pop_back();
-	}
-	bool isContiguous(string a, string b)
-	{
-		int i = 0;
         int size = a.size();
+		int count = 0;
+		auto ai = a.begin();
+		auto bi = b.begin();
+		for(int i = 0;i<size;i++)
+		{
+			if(*ai++ != *bi++)count++;
+			if(count > 1)return false;
+		}
+		return count == 1;
+		/*
 		while(i < size && a[i] == b[i])i++;
 		//此处i是否可能等于size  - 1呢，如果等于的话说明两个字符串完全相等。
 		//先假设没有完全相等的字符串吧。
 		i++;
 		while(i < size && a[i] == b[i])i++;
 		return i ==size; 
-	}
-	void wordGraph(const vector<string>& vec)
-	{
-        this->graph.resize(vec.size());
-		for(int i = 0; i < vec.size(); i++)
-		{
-			for(int j = i; j< vec.size(); j++)
-			{
-				if (isContiguous(vec[i], vec[j]))
-				{
-                    this->graph[i].push_back(j);
-                    this->graph[j].push_back(i);
-				}
-			}
-		}
+		*/
 	}
 
     void buildNodeGraph(int node, set<int>& alter)
@@ -201,7 +159,8 @@ int main()
 	string end = "cog";
     */
     Solution a;
-    auto tmp = a.findLadders(start,end,s);
+    //auto tmp = a.findLadders(start,end,s);
+    auto tmp = a.findLadders(end,start,s);
 
     for(auto& vec : tmp)
     {
