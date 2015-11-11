@@ -17,6 +17,7 @@ class Solution {
 	vector<int> tmp;
     map<int,set<int>> predecessor;
     vector<string> wordList;
+	int allStart = 0;
 
     vector<int> tmpAnswer;
     void buildAnswer(int start, int end, int depth)
@@ -40,6 +41,7 @@ class Solution {
     {
         int one = 1;
         vector<int> all(this->graph.size(),one);
+		all[end] = -1;
         vector<int> toTraverse;
         toTraverse.push_back(start);
         bool flag = false;
@@ -50,6 +52,20 @@ class Solution {
             auto tmp = toTraverse;
 			for(auto origin : toTraverse)
 			{
+				if (origin == this->allStart)
+				{
+					this->allStart += all[origin];
+				}
+				else
+				{
+					//找到前面的
+					int i = origin - 1;
+					for(;i >= this->allStart;i--)
+					{
+						if(all[i])break;
+					}
+					if(i >= 0)all[i] += all[origin];
+				}
 				all[origin] = 0;
 			}
             toTraverse.clear();
@@ -79,9 +95,10 @@ class Solution {
     }
 	bool isContiguous(const string& a, const string& b)
 	{
-		auto ai = a.c_str();
-		auto bi = b.c_str();
-		while(*ai && *ai++ == *bi++);
+		register auto ai = a.c_str();
+		register auto bi = b.c_str();
+		//不会有完全相同的a和b
+		while(*ai++ == *bi++);
 		while(*ai && *ai == *bi)ai++,bi++;
 		return *ai == 0;
 	}
@@ -89,14 +106,18 @@ class Solution {
     void buildNodeGraph(int node, const vector<int>& alter)
     {
         if(this->graph[node].size() != 0)return;
-        int i = 0;
-        for(auto& to : alter)
+		int size = alter.size();
+		auto ptr = &(this->wordList[0]);
+		auto alterptr = &alter[0];
+		for(int idx = this->allStart; ;)
         {
-            if(to && isContiguous(this->wordList[i],this->wordList[node]))
+			int tmp = alterptr[idx];
+            if(isContiguous(ptr[idx],ptr[node]))
             {
-                this->graph[node].push_back(i);
+                this->graph[node].push_back(idx);
             }
-            i++;
+			idx += tmp;
+			if(tmp == -1)break;
         }
     }
 
