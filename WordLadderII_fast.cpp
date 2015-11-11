@@ -79,21 +79,10 @@ class Solution {
     }
 	bool isContiguous(const string& a, const string& b)
 	{
-		int count = 0;
 		auto ai = a.c_str();
 		auto bi = b.c_str();
-		/*
-		for(int i = 0;i<size;i++)
-		{
-			if(*ai++ != *bi++)count++;
-			if(count > 1)return false;
-		}
-		return count == 1;
-		*/
 		while(*ai && *ai++ == *bi++);
-		//此处i是否可能等于size  - 1呢，如果等于的话说明两个字符串完全相等。
-		//先假设没有完全相等的字符串吧。
-		while(*ai && *ai++ == *bi++);
+		while(*ai && *ai == *bi)ai++,bi++;
 		return *ai == 0;
 	}
 
