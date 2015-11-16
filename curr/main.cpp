@@ -3,25 +3,32 @@
 #include<stack>
 #include<tuple>
 #include<cassert>
+#include<map>
 using namespace std;
 class Solution {
 	string t;
 	string p;
 	int tend;
 	int pend;
-	unordered_map<int,unordered_map<int,int>> cache;
-	map<int,int> repeat;
+	map<int,map<int,int>> cache;
+	//用于星号
+	map<int,int> max;
+	//用于问号
+	map<int,int> min;
+
     //所能选择的最小字符串序号,当前选择的字符串索引,pattern的序号
     stack<tuple<int,int,int>> mystack;
 	//最末尾如果是×或者？，判断可以在末尾忽略的target的字符个数。
 	int ignoreatlast = 0;
 	bool test(int tidx, int pidx)
 	{
+		//做一点trick
+		if(!ignoreatlast && p[pend - 1] != t[tend - 1])return false;
         while(1)
         {
-            if(tidx == tend && pidx >= pend - ignoreatlast)return true;
-            auto& c = cache[tidx][pidx];
-            if((tidx == tend && pidx != pend) || c != 0)
+            if(pidx == pend && ignoreatlast != 0)return true;
+			auto& c = cache[tidx][pidx];
+            if((tidx == tend && pidx != pend) || (pidx == pend) || c != 0)
             {
                 //回溯
                 if(mystack.size() == 0)
@@ -34,47 +41,71 @@ class Solution {
                 cache[get<1>(front)][get<2>(front)] = 1;
                 if(get<1>(front) > lowbound)
                 {
-                    pidx = get<2>(front);
-					auto desttidx = get<1>(front);
-					while(t[(--desttidx)] != p[pidx] && desttidx > lowbound);
-					if(desttidx <= lowbound)
+                    auto tmppidx = get<2>(front);
+					if(tmppidx == pend)
 					{
-						continue;
+						mystack.pop();
+					}
+					auto& desttidx = get<1>(front);
+					while(t[(--desttidx)] != p[tmppidx] && desttidx >= lowbound);
+					if(desttidx < lowbound)
+					{
+						mystack.pop();
 					}
 					else
 					{
+						pidx = tmppidx;
+						tidx = desttidx;
 					}
-                    tidx = get<1>(front);
+					continue;
                 }
                 else
                 {
 					mystack.pop();
-                    cout<<"!!!!!"<<endl;
                     continue;
                 }
             }
 
             auto state = make_tuple(tidx,tend,pidx + 1);
 			int repeat = 0;
+			int lowbound,highbound; //tidx 的下限
+			int mi,ma;
             switch(p[pidx])
             {
                 case '*':
-					repeat = this->repeat[pidx];
-					dest = repeat == -1?tend-1:tidx + repeat;
-					assert(repeat!=0);
+					mi = min[pidx];
+					ma = max[pidx];
+
+					lowbound = tidx + mi; //low bound
+					highbound = tidx + ma;
+
+					if(lowbound > tend)
+					{
+						c = -1; //下限不能超出tend,如果超出说明target字符不够匹配
+						continue;
+					}
+
+					if(highbound > tend)highbound = tend;
 
 					pidx++;
-					state = make_tuple(tidx,dest,pidx);
+					state = make_tuple(lowbound,highbound,pidx);
+					tidx = highbound;
 
                     mystack.push(state);
                     break;
                 default:
-                    while((p[pidx] == t[tidx]) && p[pidx] != '*' && p[pidx] != '?')
+                    while(p[pidx] != '*' && p[pidx] != '?' && pidx < pend && tidx < tend)
                     {
-                        tidx++,pidx++;
-                        cout<<"hey"<<' '<< tidx<<' '<<pidx<<endl;
+						if (p[pidx] == t[tidx])
+						{
+							tidx++,pidx++;
+						}
+						else
+						{
+							tidx = tend;
+							break;
+						}
                     }
-                    c = 1;
                     break;
             }
         }
@@ -91,6 +122,7 @@ public:
 			{
 				newp.push_back(*it);
 				ni++;
+				it++;
 				continue;
 			}
 			int star = 0,question = 0;
@@ -111,17 +143,19 @@ public:
 					break;
 				}
 			}
-			if(start != 0)
+			auto& mi = min[ni];
+			auto& ma = max[ni];
+			mi = question;
+			if(star != 0)
 			{
-				this->repeat[ni] = -1;
-				if(it == p.end())
-					ignoreatlast = newp.size();
+				ma = t.size();
+				if(it == p.end() && question == 0)
+					ignoreatlast = t.size();
 			}
 			else
 			{
-				this->repeat[ni] = question;
-				if(it == p.end())
-					ignoreatlast = question;
+				ma = question;
+				mi = question;
 			}
 			if(it != p.end())
 				newp.push_back('*');
@@ -129,6 +163,7 @@ public:
 		}
 		this->t = t;
 		this->p = newp;
+		cout<<newp<<endl;
 		tend = t.size();
 		pend = newp.size();
 		return test(0,0);
@@ -137,8 +172,12 @@ public:
 
 int main()
 {
-    string t =  "abbaabbbbababaababababbabbbaaaabbbbaaabbbabaabbbbbabbbbabbabbaaabaaaabbbbbbaaabbabbbbababbbaaabbabbabb";
-    string p = "***b**a*a*b***b*a*b*bbb**baa*bba**b**bb***b*a*aab*a**";
+	string t = "aaabbaabbbbbaabbbabbbaaabbbaaaabaaabaaaabbbbaabbbabaababababbaabbaabbbbaabaabbaabbaaaabbbbaaaabbaaabbaabbaaabababbabaaabbaabababbbaabaaaaaabababbaababaababaaabbbbaaaaaaaaaaaabbababaababaabababaabaabbaaba";
+string p = 
+		"*bb*bb*****b******a**ab*bba****ba*a*a*aa*abb*baa*a**ba**b*ba**b**ba*ab**bb***a*ba*ab****ab**aab*bb*b";
+	t = "";
+	p = "?";
     Solution s;
-    s.isMatch(t,p);
+    cout<<endl<<s.isMatch(t,p)<<endl;
+
 }
