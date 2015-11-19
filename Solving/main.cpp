@@ -1,76 +1,43 @@
 #include<iostream>
-#include<unordered_map>
-#include<stack>
-#include<tuple>
-#include<cassert>
-#include<map>
+//一个O(n^2*m)的算法 
 using namespace std;
-class Solution {
-	string t;
-	string p;
-	int tend;
-	int pend;
-	map<int,map<int,int>> cache;
-	//用于星号
-	map<int,int> max;
-	//用于问号
-	map<int,int> min;
-    bool lastisstar;
-    bool test(int tidx,int pidx)
-    {
-        while(
-        
-    }
-
-public:
-    bool isMatch(string t, string p) {
-		//先对p进行处理，删去多余的*和?
-		auto it = p.begin();
-		string newp;
-		int ni = 0;
-		while(it != p.end())
+struct TrieNode
+{
+	map<char,set<TrieNode*>> child;
+}
+class Trie
+{
+	vector<TrieNode*> root;
+	public:
+		Trie(vector<string>& strs)
 		{
-			if(*it != '*')
+			root.resize(26);
+			for(auto& str:strs)
 			{
-				newp.push_back(*it);
-				it++;
-				continue;
-			}
-			while(it != p.end())
-			{
-				if(*it == '*')
+				auto c0 = str[0];
+				TrieNode* step = root[c0 - 'a']; 
+				if(!step)
 				{
-					it++;
+					step = new TrieNode();
+					root[c0 - 'a'] = step; 
 				}
-				else
+				for(int i = 1;i<str.size();i++)
 				{
-					break;
+					auto c = str[i];
+					auto tmp =  new TrieNode();
+					step->child[c].insert = tmp;
+					step = tmp;
 				}
 			}
-        if(it == p.end())
-        {
-            lastisstar = true;
-        }
-			if(it != p.end())
-				newp.push_back('*');
 		}
-		this->t = t;
-		this->p = newp;
-		cout<<newp<<endl;
-		tend = t.size();
-		pend = newp.size();
-		return test(0,0);
+}
+class Solution {
+public:
+    vector<string> findWords(vector<vector<char>>& board, vector<string>& words) 
+	{
+
     }
 };
-
 int main()
 {
-	string t = "aaabbaabbbbbaabbbabbbaaabbbaaaabaaabaaaabbbbaabbbabaababababbaabbaabbbbaabaabbaabbaaaabbbbaaaabbaaabbaabbaaabababbabaaabbaabababbbaabaaaaaabababbaababaababaaabbbbaaaaaaaaaaaabbababaababaabababaabaabbaaba";
-string p = 
-		"*bb*bb*****b******a**ab*bba****ba*a*a*aa*abb*baa*a**ba**b*ba**b**ba*ab**bb***a*ba*ab****ab**aab*bb*b";
-	t = "";
-	p = "?";
-    Solution s;
-    cout<<endl<<s.isMatch(t,p)<<endl;
-
 }
