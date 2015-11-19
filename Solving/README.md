@@ -10,3 +10,6 @@
 - Word Ladder II
 - Valid Number
 - LRU Cache
+- Sort List
+- Candy
+- Two Sum
