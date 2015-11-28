@@ -2,6 +2,7 @@
 [学无止尽](http://outofdate.date)
 
 # Solved
+- Shortest Palindrome
 - Median of Two Sorted Arrays
 - Word Search II
 - Wildcard Matching
