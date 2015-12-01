@@ -1,126 +1,68 @@
-#include<iostream>
-#include<unordered_map>
-#include<cmath>
-#include<vector>
-#include<map>
 #include<set>
-//一个O(n^2*m)的算法 
+#include<map>
+#include<vector>
+#include<unordered_map>
+#include<climits>
+#include<algorithm>
 using namespace std;
-struct TrieNode
+struct Building
 {
-	string str;
-	//已经访问过的点，当前字符的坐标
-	//pair没法hash，当然可以用数字来定位，但是比较麻烦
-	vector<pair<set<pair<int,int>>,pair<int,int>>> media;
-	map<char,TrieNode*> child;
+    int x;
+    bool isEnd = false;
+    int id;
+    int height;
+    int zindex = 0;
 };
-//边上记录字符的Trie树
-class Trie
+class MapComp
 {
-	public:
-		TrieNode root;
-		Trie(const vector<string>& strs, int n)
-		{
-			n *=n;
-			auto* step = &root;
-			for(auto& str : strs)
-			{
-				if(str.size() > n)continue;
+    public:
+        bool operator()(const Building& a,const Building& b)
+        {
 
-				for(int i = 0;i<str.size();i++)
-				{
-					auto c = str[i];
-					try 
-					{
-						step = step->child.at(c);
-					}
-					catch(...)
-					{
-						auto tmp =  new TrieNode();
-						step->child[c] = tmp;
-						step = tmp;
-					}
-				}
-				step->str = str;
-			}
-		}
+        }
+    
 };
 class Solution {
-	vector<string> result;
-	unordered_map<char,vector<pair<int,int>>> hash;
-	bool isAdjacent(int x0,int y0,int x1,int y1)
-	{
-		if(x0 == x1)
-			return abs(y0-y1) == 1;
-		if(y0 == y1)
-			return abs(x0-x1) == 1;
-		return false;
-	}
-	void searchAnswer(TrieNode* node, TrieNode* parent, char curr)
-	{
-		auto& pointsVec = hash[curr];
-		for(auto& point : pointsVec)
-		{
-			if(parent->media.size() == 0)
-			{
-				//跟节点。还没有已经访问过的点
-				set<pair<int,int>> tmp;
-				tmp.insert(point);
-				node->media.push_back(make_pair(tmp,point));
-			}
-			else
-			{
-				bool flag = false;
-				if(node->str.size() != 0 && node->child.size() == 0)//叶子节点
-				{
-					flag = true;
-				}
-				for(auto& med : parent->media)
-				{
-					auto& visited = med.first;
-					auto& currp = med.second;
+    public:
+        vector<pair<int, int>> getSkyline(vector<vector<int>>& buildings) {
+            //在每个后面加入远近坐标
+            //想了一下似乎跟zindex没什么关系。先做吧 
+            int i = INT_MAX;
+            int id = 0;
+            vector<Building> bvec;
+            for(auto& v : buildings)
+            {
+                Building left,right;
+                left.x = v[0];
+                left.isEnd = false;
+                left.id = id;
+                left.height = v[2];
+                left.zindex = i;
+                right = left;
+                right.x = v[1];
+                right.isEnd = true;
+                bvec.push_back(left);
+                bvec.push_back(right);
+                id++;
+                i--;
+            }
+            //按X轴坐标排
+            sort(bvec.begin(),bvec.end(),
+            [](const Building& a,const Building& b)
+            {
+                if(a.x < b.x)return true;
+                else return false;
+            });
 
-					if(isAdjacent(currp.first,currp.second,point.first,point.second) && visited.find(point) == visited.end())
-					{
-						if(flag)
-						{
-							result.push_back(node->str);
-							return;
-						}
-						node->media.push_back(make_pair(visited,point));
-						node->media.back().first.insert(point);
-					}
-				}
-			}
-		}
-		if(node->str.size() != 0 && node->media.size() != 0)
-		{
-			result.push_back(node->str);
-		}
-		for(auto& cp : node->child)
-		{
-			searchAnswer(cp.second, node, cp.first);
-		}
-	}
-public:
-    vector<string> findWords(vector<vector<char>>& board, vector<string>& words) 
-	{
-		Trie trie(words,board.size());
-		auto& root = trie.root;
-		for(int i = 0;i<board.size();i++)
-		{
-			auto& vec = board[i];
-			for(int j = 0;j<vec.size();j++)
-				hash[vec[j]].push_back(make_pair(i,j));
-		}
-		
-		for(auto& cp : root.child)
-		{
-			searchAnswer(cp.second, &root, cp.first);
-		}
-		return result;
-    }
+            typedef multiset<Building,MapComp> HMap;
+            HMap heightMap;
+            map<int,pair<HMap::iterator,HMap::iterator>> iterMap;
+            for(auto& b : bvec)
+            {
+                if(!b.isEnd)
+                {
+                    iterMap[1] = decltype(iterMap)::value_type();
+                }
+            }
+        }
 };
-int main()
-{
-}
