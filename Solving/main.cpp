@@ -1,74 +1,66 @@
-#include<set>
-#include<map>
 #include<iostream>
+#include<sstream>
 #include<vector>
-#include<unordered_map>
+#include<map>
 #include<climits>
 #include<algorithm>
+#include<cstdlib>
+#include<cstring>
+#include <cmath>
 using namespace std;
 class Solution {
-    void calc(vector<vector<int>>& res,vector<int>>& dungeon,int i,int j)
-    {
-        auto right = res[i][j+1];
-        auto left = res[i+1][j];
-        auto& dest = res[i][j];
-        auto val = dungeon[i][j];
-
-        auto minHeal = min(left,right);
-
-        if(val >= 0)
-        {
-            auto tmp = minHeal - val;
-            dest = tmp > 0 :tmp : 1;
-        }
-        else
-        {
-            dest = minHeal - val;
-        }
-    }
+    const int MY_MIN = INT_MAX;
 public:
-    int calculateMinimumHP(vector<vector<int>>& dungeon) {
-        int row = dungeon.size();
-        if(row == 0)return 1;
-        int col = dungeon[0].size();
-        vector<vector<int>> resMatrix = dungeon;
-
-        auto m =  dungeon[row-1][col-1];
-        resMatrix[row - 1][col - 1] = m >= 0 ? 1 : abs(m) + 1;
-        //构造最后一行，最后一列。
-        for(int j = col - 2; j >= 0;j--)
+    vector<int> smallestRange(vector<vector<int>>& nums) {
+        vector<int> index_vec(nums.size(), 0);
+        vector<int> array_front_heap(nums.size());
+        for (auto i = 0; i < nums.size(); i++)
         {
-            auto to = resMatrix[row - 1][j + 1];
-            auto& from = resMatrix[row - 1][j];
-            auto val = dungeon[row - 1][j];
-            if(val >= 0)
-            {
-                auto tmp = to - val;
-                from = tmp > 0 :tmp : 1;
-            }
-            else
-            {
-                from = to - val;
-            }
+            nums[i].push_back(MY_MIN);
+            array_front_heap[i] = i;
         }
-
-        //最后一列
-        for(int i = row - 2; i >= 0;i--)
+        auto comp_func = [&index_vec, &nums](int& a_idx, int& b_idx)
         {
-            auto to = resMatrix[i + 1][col - 1];
-            auto& from = resMatrix[i][col - 1];
-            auto val = dungeon[i][col - 1];
-            if(val >= 0)
-            {
-                auto tmp = to - val;
-                from = tmp > 0 :tmp : 1;
-            }
-            else
-            {
-                from = to - val;
-            }
+            return nums[a_idx][index_vec[a_idx]] > nums[b_idx][index_vec[b_idx]];
+        };
+        make_heap(array_front_heap.begin(), array_front_heap.end(), comp_func);
+        
+        int range_left = 0, range_right = INT_MAX;
+        int cur_min = INT_MAX, cur_max = INT_MIN;
+        for (int i = 0; i < nums.size(); i++)
+        {
+            cur_min = min(cur_min, nums[i][index_vec[i] == nums[i].size() - 1 ? index_vec[i] - 1 : index_vec[i]]);
+            cur_max = max(cur_max, nums[i][index_vec[i] == nums[i].size() - 1 ? index_vec[i] - 1 : index_vec[i]]);
         }
-
-        for(int i = row - 2;
+        range_left = cur_min;
+        range_right = cur_max;
+        while (1)
+        {
+            pop_heap(array_front_heap.begin(), array_front_heap.end(), comp_func);
+            int curmin_idx = array_front_heap[array_front_heap.size() - 1];
+            int tmp = nums[curmin_idx][index_vec[curmin_idx]++];
+            push_heap(array_front_heap.begin(), array_front_heap.end(), comp_func);
+            if (tmp == MY_MIN)
+                break;
+            cout << cur_min << '\t' << cur_max << '\t' << tmp << '\t' << endl;
+            if (tmp == cur_min)
+            {
+                cur_min = INT_MAX;
+                for (int i = 0; i < nums.size(); i++)
+                {
+                    cur_min = min(cur_min, nums[i][index_vec[i] == nums[i].size() - 1 ? index_vec[i] - 1 : index_vec[i]]);
+                }
+            }
+            cur_max = nums[curmin_idx][index_vec[curmin_idx]];
+            
+            if (cur_max - cur_min < range_right - range_left)
+            {
+                range_left = cur_min;
+                range_right = cur_max;
+            }
+            
+            
+        }
+        return {range_left, range_right};
     }
 };
