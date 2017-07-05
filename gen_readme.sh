@@ -13,7 +13,13 @@ for cpp in `ls Accepted`;do
 	echo "- [$seqno.$filename](https://leetcode.com/problems/${splited[1]})" >> README.md
 done
 
-echo "# Progress" >> README.md
-leetcode stat >> README.md
+cat >> README.md <<EOF
+# Progress
+\`\`\`
+EOF
+leetcode stat > /tmp/tmpr
+vim /tmp/tmpr -c "normal >G" -c "wq"
+cat /tmp/tmpr >> README.md
+echo "\`\`\`" >> README.md
 
 cat README.md
