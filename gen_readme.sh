@@ -10,6 +10,7 @@ EOF
 rm README.md
 
 echo $A > README.md
+echo "" >> README.md
 
 for cpp in `ls Accepted`;do
 	IFS="." splited=($cpp)
