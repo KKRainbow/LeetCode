@@ -5,7 +5,7 @@ cat > README.md <<EOF
 
 # Accecpted
 | 序号 | 题名 | 解答 |
-|----- |:----:|-----:|
+|----- |:----:|:----:|
 EOF
 
 for cpp in `ls Accepted | sort -n`;do
