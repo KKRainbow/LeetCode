@@ -18,6 +18,6 @@ cat >> README.md <<EOF
 \`\`\`
 EOF
 leetcode stat > /tmp/tmpr
-vim /tmp/tmpr -c "normal >G" -c "wq"
+sed -i -e 's/^/\t/g' /tmp/tmpr 
 cat /tmp/tmpr >> README.md
 echo "\`\`\`" >> README.md
