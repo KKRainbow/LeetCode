@@ -1,16 +1,10 @@
 #!/bin/bash
-A=$(cat <<EOF
+cat > README.md <<EOF
 # Blog
 [雨过。天晴的博客](https://sunsijie.top)
 
 # Accecpted
 EOF
-)
-
-rm README.md
-
-echo $A > README.md
-echo "" >> README.md
 
 for cpp in `ls Accepted`;do
 	IFS="." splited=($cpp)
