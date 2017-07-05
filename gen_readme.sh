@@ -6,7 +6,7 @@ cat > README.md <<EOF
 # Accecpted
 EOF
 
-for cpp in `ls Accepted`;do
+for cpp in `ls Accepted | sort -n`;do
 	IFS="." splited=($cpp)
 	seqno=${splited[0]}
 	filename=${splited[1]//-/ }
