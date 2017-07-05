@@ -21,5 +21,3 @@ leetcode stat > /tmp/tmpr
 vim /tmp/tmpr -c "normal >G" -c "wq"
 cat /tmp/tmpr >> README.md
 echo "\`\`\`" >> README.md
-
-cat README.md
