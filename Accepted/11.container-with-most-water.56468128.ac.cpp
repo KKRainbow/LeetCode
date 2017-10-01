@@ -3,9 +3,10 @@
  *
  * https://leetcode.com/problems/container-with-most-water
  *
- * Medium (36.41%)
- * Total Accepted:    
- * Total Submissions: 
+ * algorithms
+ * Medium (36.72%)
+ * Total Accepted:    153.9K
+ * Total Submissions: 419.1K
  * Testcase Example:  '[1,1]'
  *
  * Given n non-negative integers a1, a2, ..., an, where each represents a point
@@ -18,28 +19,43 @@
  * 
  */
 class Solution {
-	public:
-		int maxArea(vector<int>& height) {
-			map<int, vector<int>> m;
-			int res = 0;
-			for (int i = 0; i < height.size(); i++) {
-				m[height[i]].push_back(i);
-			}
+    int max(int a, int b) 
+    {
+        return a > b ? a : b;
+    }
 
-			int left = 0, right = height.size() - 1;
-			for (auto& p : m) {
-				int hei = p.first;
-				auto& idx= p.second;
-				while (height[left] < hei) {
-					left++;
-				}
-				while (height[right] < hei) {
-					right--;
-				}
-				res = max (res, ((*(--idx.end())) - left) * hei);
-				res = max(res, (right - (*idx.begin())) * hei);
-			}
+    int min(int a, int b) 
+    {
+        return a < b ? a : b;
+    }
 
-			return res;
-		}
+public:
+    int maxArea(vector<int>& arr) {
+        int l = 0, r = arr.size() - 1, res = 0;
+        res = max(res, min(arr[l], arr[r]) * (r - l));
+
+        while (l < r) {
+            if (arr[l] < arr[r]) {
+                while(l < r && arr[l] < arr[r]) {
+                    l++;
+                    if (arr[l] > arr[l - 1]) {
+                        res = max(res, min(arr[l], arr[r]) * (r - l));
+                    }
+                }
+            }
+            else if (arr[r] < arr[l]) {
+                while(l < r && arr[r] < arr[l]) {
+                    r--;
+                    if (arr[r] > arr[r + 1]) {
+                        res = max(res, min(arr[l], arr[r]) * (r - l));
+                    }
+                }
+            } else {
+                l++;
+                r--;
+            }
+            res = max(res, min(arr[l], arr[r]) * (r - l));
+        }
+        return res;
+    }
 };
