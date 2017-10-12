@@ -38,6 +38,7 @@
 |68 | [text justification](https://leetcode.com/problems/text-justification) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/68.text-justification.45835436.ac.cpp) |
 |70 | [climbing stairs](https://leetcode.com/problems/climbing-stairs) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/70.climbing-stairs.47119689.ac.cpp) |
 |72 | [edit distance](https://leetcode.com/problems/edit-distance) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/72.edit-distance.54954059.ac.cpp) |
+|75 | [sort colors](https://leetcode.com/problems/sort-colors) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/75.sort-colors.123217251.ac.cpp) |
 |76 | [minimum window substring](https://leetcode.com/problems/minimum-window-substring) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/76.minimum-window-substring.54861957.ac.cpp) |
 |78 | [subsets](https://leetcode.com/problems/subsets) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/78.subsets.57960921.ac.cpp) |
 |83 | [remove duplicates from sorted list](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/83.remove-duplicates-from-sorted-list.47114303.ac.cpp) |
@@ -122,12 +123,12 @@
 |632 | [smallest range](https://leetcode.com/problems/smallest-range) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/632.smallest-range.108413363.ac.cpp) |
 # Progress
 ```
-	 Easy      39/150 (26.00%)	████████░░░░░░░░░░░░░░░░░░░░░░
-	 Medium    33/298 (11.07%)	████░░░░░░░░░░░░░░░░░░░░░░░░░░
-	 Hard      45/111 (40.54%)	█████████████░░░░░░░░░░░░░░░░░
+	 Easy      39/191 (20.42%)	███████░░░░░░░░░░░░░░░░░░░░░░░
+	 Medium    34/341 (9.97%)	███░░░░░░░░░░░░░░░░░░░░░░░░░░░
+	 Hard      45/133 (33.83%)	███████████░░░░░░░░░░░░░░░░░░░
 	
 	Without Locked:
-	 Easy      38/133 (28.57%)	█████████░░░░░░░░░░░░░░░░░░░░░
-	 Medium    33/233 (14.16%)	█████░░░░░░░░░░░░░░░░░░░░░░░░░
-	 Hard      45/88  (51.14%)	████████████████░░░░░░░░░░░░░░
+	 Easy      38/165 (23.03%)	███████░░░░░░░░░░░░░░░░░░░░░░░
+	 Medium    34/262 (12.98%)	████░░░░░░░░░░░░░░░░░░░░░░░░░░
+	 Hard      45/101 (44.55%)	██████████████░░░░░░░░░░░░░░░░
 ```
