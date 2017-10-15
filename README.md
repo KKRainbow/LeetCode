@@ -10,6 +10,7 @@
 |4 | [median of two sorted arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/4.median-of-two-sorted-arrays.46852057.ac.cpp) |
 |5 | [longest palindromic substring](https://leetcode.com/problems/longest-palindromic-substring) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/5.longest-palindromic-substring.56441007.ac.cpp) |
 |10 | [regular expression matching](https://leetcode.com/problems/regular-expression-matching) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/10.regular-expression-matching.57779619.ac.cpp) |
+|11 | [container with most water](https://leetcode.com/problems/container-with-most-water) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/11.container-with-most-water.121494693.ac.cpp) |
 |11 | [container with most water](https://leetcode.com/problems/container-with-most-water) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/11.container-with-most-water.56468128.ac.cpp) |
 |13 | [roman to integer](https://leetcode.com/problems/roman-to-integer) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/13.roman-to-integer.57095448.ac.cpp) |
 |20 | [valid parentheses](https://leetcode.com/problems/valid-parentheses) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/20.valid-parentheses.56446170.ac.cpp) |
@@ -45,9 +46,12 @@
 |84 | [largest rectangle in histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/84.largest-rectangle-in-histogram.54649134.ac.cpp) |
 |85 | [maximal rectangle](https://leetcode.com/problems/maximal-rectangle) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/85.maximal-rectangle.56015551.ac.cpp) |
 |87 | [scramble string](https://leetcode.com/problems/scramble-string) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/87.scramble-string.56611967.ac.cpp) |
+|89 | [gray code](https://leetcode.com/problems/gray-code) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/89.gray-code.123627350.ac.cpp) |
 |91 | [decode ways](https://leetcode.com/problems/decode-ways) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/91.decode-ways.56448400.ac.cpp) |
 |95 | [unique binary search trees ii](https://leetcode.com/problems/unique-binary-search-trees-ii) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/95.unique-binary-search-trees-ii.57890207.ac.cpp) |
+|96 | [unique binary search trees](https://leetcode.com/problems/unique-binary-search-trees) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/96.unique-binary-search-trees.123536602.ac.cpp) |
 |97 | [interleaving string](https://leetcode.com/problems/interleaving-string) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/97.interleaving-string.55565053.ac.cpp) |
+|98 | [validate binary search tree](https://leetcode.com/problems/validate-binary-search-tree) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/98.validate-binary-search-tree.123628927.ac.cpp) |
 |100 | [same tree](https://leetcode.com/problems/same-tree) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/100.same-tree.47083710.ac.cpp) |
 |101 | [symmetric tree](https://leetcode.com/problems/symmetric-tree) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/101.symmetric-tree.57769205.ac.cpp) |
 |102 | [binary tree level order traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/102.binary-tree-level-order-traversal.55164555.ac.cpp) |
@@ -113,22 +117,30 @@
 |335 | [self crossing](https://leetcode.com/problems/self-crossing) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/335.self-crossing.56796144.ac.cpp) |
 |336 | [palindrome pairs](https://leetcode.com/problems/palindrome-pairs) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/336.palindrome-pairs.56018376.ac.cpp) |
 |337 | [house robber iii](https://leetcode.com/problems/house-robber-iii) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/337.house-robber-iii.57764525.ac.cpp) |
+|339 | [nested list weight sum](https://leetcode.com/problems/nested-list-weight-sum) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/339.nested-list-weight-sum.57625808.ac.cpp) |
 |341 | [flatten nested list iterator](https://leetcode.com/problems/flatten-nested-list-iterator) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/341.flatten-nested-list-iterator.57628289.ac.cpp) |
 |378 | [kth smallest element in a sorted matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/378.kth-smallest-element-in-a-sorted-matrix.104228393.ac.cpp) |
+|416 | [partition equal subset sum](https://leetcode.com/problems/partition-equal-subset-sum) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/416.partition-equal-subset-sum.123534171.ac.cpp) |
 |420 | [strong password checker](https://leetcode.com/problems/strong-password-checker) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/420.strong-password-checker.103186419.ac.cpp) |
 |440 | [k th smallest in lexicographical order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/440.k-th-smallest-in-lexicographical-order.103579862.ac.cpp) |
+|442 | [find all duplicates in an array](https://leetcode.com/problems/find-all-duplicates-in-an-array) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/442.find-all-duplicates-in-an-array.123531015.ac.cpp) |
+|456 | [132 pattern](https://leetcode.com/problems/132-pattern) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/456.132-pattern.123492842.ac.cpp) |
 |460 | [lfu cache](https://leetcode.com/problems/lfu-cache) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/460.lfu-cache.103550682.ac.cpp) |
+|491 | [increasing subsequences](https://leetcode.com/problems/increasing-subsequences) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/491.increasing-subsequences.123495838.ac.cpp) |
 |493 | [reverse pairs](https://leetcode.com/problems/reverse-pairs) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/493.reverse-pairs.102982877.ac.cpp) |
+|540 | [single element in a sorted array](https://leetcode.com/problems/single-element-in-a-sorted-array) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/540.single-element-in-a-sorted-array.123243481.ac.cpp) |
 |564 | [find the closest palindrome](https://leetcode.com/problems/find-the-closest-palindrome) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/564.find-the-closest-palindrome.102957531.ac.cpp) |
 |632 | [smallest range](https://leetcode.com/problems/smallest-range) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/632.smallest-range.108413363.ac.cpp) |
+|688 | [knight probability in chessboard](https://leetcode.com/problems/knight-probability-in-chessboard) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/688.knight-probability-in-chessboard.123530136.ac.cpp) |
+|693 | [binary number with alternating bits](https://leetcode.com/problems/binary-number-with-alternating-bits) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/693.binary-number-with-alternating-bits.123621091.ac.cpp) |
 # Progress
 ```
-	 Easy      39/191 (20.42%)	███████░░░░░░░░░░░░░░░░░░░░░░░
-	 Medium    34/341 (9.97%)	███░░░░░░░░░░░░░░░░░░░░░░░░░░░
+	 Easy      40/191 (20.94%)	███████░░░░░░░░░░░░░░░░░░░░░░░
+	 Medium    43/341 (12.61%)	████░░░░░░░░░░░░░░░░░░░░░░░░░░
 	 Hard      45/133 (33.83%)	███████████░░░░░░░░░░░░░░░░░░░
 	
 	Without Locked:
-	 Easy      38/165 (23.03%)	███████░░░░░░░░░░░░░░░░░░░░░░░
-	 Medium    34/262 (12.98%)	████░░░░░░░░░░░░░░░░░░░░░░░░░░
+	 Easy      39/165 (23.64%)	████████░░░░░░░░░░░░░░░░░░░░░░
+	 Medium    43/262 (16.41%)	█████░░░░░░░░░░░░░░░░░░░░░░░░░
 	 Hard      45/101 (44.55%)	██████████████░░░░░░░░░░░░░░░░
 ```
