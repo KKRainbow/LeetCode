@@ -107,6 +107,7 @@
 |258 | [add digits](https://leetcode.com/problems/add-digits) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/258.add-digits.47045719.ac.cpp) |
 |263 | [ugly number](https://leetcode.com/problems/ugly-number) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/263.ugly-number.47120617.ac.cpp) |
 |273 | [integer to english words](https://leetcode.com/problems/integer-to-english-words) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/273.integer-to-english-words.103188806.ac.cpp) |
+|279 | [perfect squares](https://leetcode.com/problems/perfect-squares) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/279.perfect-squares.123691122.ac.cpp) |
 |283 | [move zeroes](https://leetcode.com/problems/move-zeroes) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/283.move-zeroes.47083608.ac.cpp) |
 |290 | [word pattern](https://leetcode.com/problems/word-pattern) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/290.word-pattern.56567371.ac.cpp) |
 |292 | [nim game](https://leetcode.com/problems/nim-game) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/292.nim-game.45833629.ac.cpp) |
@@ -131,16 +132,17 @@
 |540 | [single element in a sorted array](https://leetcode.com/problems/single-element-in-a-sorted-array) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/540.single-element-in-a-sorted-array.123243481.ac.cpp) |
 |564 | [find the closest palindrome](https://leetcode.com/problems/find-the-closest-palindrome) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/564.find-the-closest-palindrome.102957531.ac.cpp) |
 |632 | [smallest range](https://leetcode.com/problems/smallest-range) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/632.smallest-range.108413363.ac.cpp) |
+|662 | [maximum width of binary tree](https://leetcode.com/problems/maximum-width-of-binary-tree) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/662.maximum-width-of-binary-tree.123684505.ac.cpp) |
 |688 | [knight probability in chessboard](https://leetcode.com/problems/knight-probability-in-chessboard) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/688.knight-probability-in-chessboard.123530136.ac.cpp) |
 |693 | [binary number with alternating bits](https://leetcode.com/problems/binary-number-with-alternating-bits) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/693.binary-number-with-alternating-bits.123621091.ac.cpp) |
 # Progress
 ```
-	 Easy      40/191 (20.94%)	███████░░░░░░░░░░░░░░░░░░░░░░░
-	 Medium    43/341 (12.61%)	████░░░░░░░░░░░░░░░░░░░░░░░░░░
-	 Hard      45/133 (33.83%)	███████████░░░░░░░░░░░░░░░░░░░
+	 Easy      40/193 (20.73%)	███████░░░░░░░░░░░░░░░░░░░░░░░
+	 Medium    45/342 (13.16%)	████░░░░░░░░░░░░░░░░░░░░░░░░░░
+	 Hard      45/134 (33.58%)	███████████░░░░░░░░░░░░░░░░░░░
 	
 	Without Locked:
-	 Easy      39/165 (23.64%)	████████░░░░░░░░░░░░░░░░░░░░░░
-	 Medium    43/262 (16.41%)	█████░░░░░░░░░░░░░░░░░░░░░░░░░
-	 Hard      45/101 (44.55%)	██████████████░░░░░░░░░░░░░░░░
+	 Easy      39/167 (23.35%)	████████░░░░░░░░░░░░░░░░░░░░░░
+	 Medium    45/263 (17.11%)	██████░░░░░░░░░░░░░░░░░░░░░░░░
+	 Hard      45/102 (44.12%)	██████████████░░░░░░░░░░░░░░░░
 ```
