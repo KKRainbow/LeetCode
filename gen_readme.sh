@@ -8,6 +8,8 @@ cat > README.md <<EOF
 |----- |:----:|:----:|
 EOF
 
+find ./Accepted -name '*notac*' -delete
+
 for cpp in `ls Accepted | sort -n`;do
 	IFS="." splited=($cpp)
 	seqno=${splited[0]}
