@@ -1,9 +1,5 @@
 # Blog
 [雨过。天晴的博客](https://sunsijie.top)
-
-# Accecpted
-| 序号 | 题名 | 解答 |
-|----- |:----:|:----:|
 # Progress
 ```
 	 Easy      55/193 (28.50%)	█████████░░░░░░░░░░░░░░░░░░░░░
@@ -15,6 +11,9 @@
 	 Medium    55/266 (20.68%)	███████░░░░░░░░░░░░░░░░░░░░░░░
 	 Hard      45/103 (43.69%)	██████████████░░░░░░░░░░░░░░░░
 ```
+# Accecpted
+| 序号 | 题名 | 解答 |
+|----- |:----:|:----:|
 |1 | [two sum](https://leetcode.com/problems/two-sum) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/1.two-sum.39662664.ac.cpp) |
 |2 | [add two numbers](https://leetcode.com/problems/add-two-numbers) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/2.add-two-numbers.56449197.ac.cpp) |
 |3 | [longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/3.longest-substring-without-repeating-characters.56445660.ac.cpp) |

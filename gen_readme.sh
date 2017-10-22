@@ -2,11 +2,8 @@
 cat > README.md <<EOF
 # Blog
 [雨过。天晴的博客](https://sunsijie.top)
-
-# Accecpted
-| 序号 | 题名 | 解答 |
-|----- |:----:|:----:|
 EOF
+
 
 cat >> README.md <<EOF
 # Progress
@@ -16,6 +13,12 @@ leetcode stat > /tmp/tmpr
 sed -i -e 's/^/\t/g' /tmp/tmpr 
 cat /tmp/tmpr >> README.md
 echo "\`\`\`" >> README.md
+
+cat >> README.md <<EOF
+# Accecpted
+| 序号 | 题名 | 解答 |
+|----- |:----:|:----:|
+EOF
 
 find ./Accepted -name '*notac*' -delete
 
