@@ -8,6 +8,15 @@ cat > README.md <<EOF
 |----- |:----:|:----:|
 EOF
 
+cat >> README.md <<EOF
+# Progress
+\`\`\`
+EOF
+leetcode stat > /tmp/tmpr
+sed -i -e 's/^/\t/g' /tmp/tmpr 
+cat /tmp/tmpr >> README.md
+echo "\`\`\`" >> README.md
+
 find ./Accepted -name '*notac*' -delete
 
 for cpp in `ls Accepted | sort -n`;do
@@ -17,11 +26,3 @@ for cpp in `ls Accepted | sort -n`;do
 	echo "|$seqno | [$filename](https://leetcode.com/problems/${splited[1]}) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/${cpp}) |" >> README.md
 done
 
-cat >> README.md <<EOF
-# Progress
-\`\`\`
-EOF
-leetcode stat > /tmp/tmpr
-sed -i -e 's/^/\t/g' /tmp/tmpr 
-cat /tmp/tmpr >> README.md
-echo "\`\`\`" >> README.md

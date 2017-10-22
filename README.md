@@ -4,6 +4,17 @@
 # Accecpted
 | 序号 | 题名 | 解答 |
 |----- |:----:|:----:|
+# Progress
+```
+	 Easy      55/193 (28.50%)	█████████░░░░░░░░░░░░░░░░░░░░░
+	 Medium    55/345 (15.94%)	█████░░░░░░░░░░░░░░░░░░░░░░░░░
+	 Hard      45/136 (33.09%)	██████████░░░░░░░░░░░░░░░░░░░░
+	
+	Without Locked:
+	 Easy      54/167 (32.34%)	██████████░░░░░░░░░░░░░░░░░░░░
+	 Medium    55/266 (20.68%)	███████░░░░░░░░░░░░░░░░░░░░░░░
+	 Hard      45/103 (43.69%)	██████████████░░░░░░░░░░░░░░░░
+```
 |1 | [two sum](https://leetcode.com/problems/two-sum) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/1.two-sum.39662664.ac.cpp) |
 |2 | [add two numbers](https://leetcode.com/problems/add-two-numbers) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/2.add-two-numbers.56449197.ac.cpp) |
 |3 | [longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/3.longest-substring-without-repeating-characters.56445660.ac.cpp) |
@@ -160,14 +171,3 @@
 |688 | [knight probability in chessboard](https://leetcode.com/problems/knight-probability-in-chessboard) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/688.knight-probability-in-chessboard.123530136.ac.cpp) |
 |693 | [binary number with alternating bits](https://leetcode.com/problems/binary-number-with-alternating-bits) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/693.binary-number-with-alternating-bits.123621091.ac.cpp) |
 |697 | [degree of an array](https://leetcode.com/problems/degree-of-an-array) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/697.degree-of-an-array.123854779.ac.cpp) |
-# Progress
-```
-	 Easy      55/193 (28.50%)	█████████░░░░░░░░░░░░░░░░░░░░░
-	 Medium    55/345 (15.94%)	█████░░░░░░░░░░░░░░░░░░░░░░░░░
-	 Hard      45/136 (33.09%)	██████████░░░░░░░░░░░░░░░░░░░░
-	
-	Without Locked:
-	 Easy      54/167 (32.34%)	██████████░░░░░░░░░░░░░░░░░░░░
-	 Medium    55/266 (20.68%)	███████░░░░░░░░░░░░░░░░░░░░░░░
-	 Hard      45/103 (43.69%)	██████████████░░░░░░░░░░░░░░░░
-```
