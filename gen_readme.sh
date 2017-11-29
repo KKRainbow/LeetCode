@@ -28,13 +28,13 @@ for cpp in `ls Accepted | sort -n`;do
 	filename=${splited[1]//-/ }
 
     cmd=''
-    for x in Of By The To And;do
+    for x in Of By The To And In From With;do
         [ ! -z $cmd ] && cmd+='\|'
         cmd+='\b'"$x"
     done
     cmd='s/'$cmd'/\l&/g'
         
-    filename=$(echo $filename | sed 's/^\w\|\b\w/\U&/g' | sed "$cmd")
+    filename=$(echo $filename | sed 's/ii\b\|^lfu\b\|\bi$\|\bii$\|\biii$\|\biv$\|^\w\|\b\w/\U&/g' | sed "$cmd")
 	echo "|$seqno | [$filename](https://leetcode.com/problems/${splited[1]}) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/${cpp}) |" >> README.md
 done
 
