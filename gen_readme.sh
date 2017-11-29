@@ -28,9 +28,9 @@ for cpp in `ls Accepted | sort -n`;do
 	filename=${splited[1]//-/ }
 
     cmd=''
-    for x in Of By The To And In From With;do
+    for x in Of By The To And In From With Without;do
         [ ! -z $cmd ] && cmd+='\|'
-        cmd+='\b'"$x"
+        cmd+='\b'"$x"'\b'
     done
     cmd='s/'$cmd'/\l&/g'
         
