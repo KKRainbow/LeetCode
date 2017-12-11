@@ -1,9 +1,17 @@
 #!/bin/bash
+
+sed() {
+    if [ $(uname) == 'Darwin' ];then
+        gsed $@
+    else
+        $(/usr/bin/env) "sed" $@
+    fi
+}
+
 cat > README.md <<EOF
 # Blog
 [雨过。天晴的博客](https://sunsijie.top)
 EOF
-
 
 cat >> README.md <<EOF
 # Progress
@@ -33,7 +41,8 @@ for cpp in `ls Accepted | sort -n`;do
         cmd+='\b'"$x"'\b'
     done
     cmd='s/'$cmd'/\l&/g'
-        
+
+
     filename=$(echo $filename | sed 's/ii\b\|^lfu\b\|\bi$\|\bii$\|\biii$\|\biv$\|^\w\|\b\w/\U&/g' | sed "$cmd")
 	echo "|$seqno | [$filename](https://leetcode.com/problems/${splited[1]}) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/${cpp}) |" >> README.md
 done
