@@ -4,13 +4,13 @@ sed() {
     if [ $(uname) == 'Darwin' ];then
         gsed $@
     else
-        $(/usr/bin/env) "sed" $@
+        /usr/bin/env "sed" $@
     fi
 }
 
 cat > README.md <<EOF
 # Blog
-[雨过。天晴的博客](https://sunsijie.top)
+[雨过。天晴的博客](https://keep-learning.top)
 EOF
 
 cat >> README.md <<EOF
