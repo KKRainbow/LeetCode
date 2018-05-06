@@ -18,6 +18,9 @@ cat >> README.md <<EOF
 \`\`\`
 EOF
 leetcode stat > /tmp/tmpr
+echo "without locked" >> /tmp/tmpr
+leetcode stat --no-lock >> /tmp/tmpr
+leetcode stat -g >> /tmp/tmpr
 sed -i -e 's/^/\t/g' /tmp/tmpr 
 cat /tmp/tmpr >> README.md
 echo "\`\`\`" >> README.md
