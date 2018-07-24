@@ -3,39 +3,39 @@
 # Progress
 ```
 	
-	 Easy	 87/223 ( 39.01 %)  ████████████░░░░░░░░░░░░░░░░░░
-	 Medium	142/400 ( 35.50 %)  ███████████░░░░░░░░░░░░░░░░░░░
-	 Hard	 51/169 ( 30.18 %)  ██████████░░░░░░░░░░░░░░░░░░░░
+	 Easy	 93/249 ( 37.35 %)  ████████████░░░░░░░░░░░░░░░░░░
+	 Medium	147/433 ( 33.95 %)  ███████████░░░░░░░░░░░░░░░░░░░
+	 Hard	 53/183 ( 28.96 %)  █████████░░░░░░░░░░░░░░░░░░░░░
 	
 	without locked
 	
-	 Easy	 86/192 ( 44.79 %)  ██████████████░░░░░░░░░░░░░░░░
-	 Medium	142/314 ( 45.22 %)  ██████████████░░░░░░░░░░░░░░░░
-	 Hard	 51/130 ( 39.23 %)  ████████████░░░░░░░░░░░░░░░░░░
+	 Easy	 92/218 ( 42.20 %)  █████████████░░░░░░░░░░░░░░░░░
+	 Medium	147/344 ( 42.73 %)  █████████████░░░░░░░░░░░░░░░░░
+	 Hard	 53/141 ( 37.59 %)  ████████████░░░░░░░░░░░░░░░░░░
 	
 	
 	        1                10
-	 000   ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ⬚ ▣
-	 010   ▣ ⬚ ▣ ▣ ▣ ⬚ ▣ ⬚ ▣ ▣
-	 020   ▣ ▣ ▣ ▣ ⬚ ▣ ⬚ ▣ ▣ ▣
+	 000   ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣
+	 010   ▣ ▣ ▣ ▣ ▣ ▣ ▣ ⬚ ▣ ▣
+	 020   ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣
 	 030   ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣
 	 040   ▣ ▣ ⬚ ▣ ▣ ▣ ⬚ ▣ ▣ ▣
 	 050   ▣ ⬚ ▣ ▣ ▣ ▣ ▣ ⬚ ⬚ ▣
 	 060   ▣ ▣ ▣ ▣ ▣ ▣ ⬚ ▣ ▣ ▣
-	 070   ⬚ ▣ ▣ ▣ ▣ ▣ ⬚ ▣ ▣ ▣
+	 070   ⬚ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣
 	 080   ⬚ ⬚ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ⬚
 	 090   ▣ ⬚ ⬚ ▣ ▣ ▣ ▣ ▣ ⬚ ▣
 	 100   ▣ ▣ ▣ ▣ ▣ ⬚ ▣ ▣ ⬚ ⬚
 	 110   ⬚ ▣ ⬚ ▣ ⬚ ▣ ⬚ ▣ ⬚ ▣
-	 120   ▣ ▣ ⬚ ▣ ⬚ ▣ ⬚ ▣ ▣ ▤
+	 120   ▣ ▣ ⬚ ▣ ▣ ▣ ⬚ ▣ ▣ ▣
 	 130   ▣ ▣ ⬚ ▣ ▣ ▣ ▣ ▤ ▣ ▣
 	 140   ▣ ▣ ▣ ⬚ ▣ ▣ ⬚ ▣ ▣ ▣
 	 150   ▣ ▣ ▣ ⬚ ▣ ⬚ ⬚ ⬚ ⬚ ▣
 	 160   ⬚ ⬚ ⬚ ▣ ⬚ ▣ ⬚ ⬚ ▣ ⬚
-	 170   ▣ ⬚ ▣ ▣ ⬚ ▤ ⬚ ⬚ ▣ ⬚
+	 170   ▣ ▣ ▣ ▣ ⬚ ▤ ⬚ ⬚ ▣ ⬚
 	 180   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ▣ ⬚ ⬚ ▣
 	 190   ▣ ⬚ ⬚ ⬚ ▤ ⬚ ⬚ ▣ ⬚ ▣
-	 200   ⬚ ⬚ ⬚ ⬚ ⬚ ▣ ▣ ▣ ▣ ▣
+	 200   ⬚ ▣ ⬚ ⬚ ⬚ ▣ ▣ ▣ ▣ ▣
 	 210   ⬚ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ⬚ ⬚
 	 220   ▣ ⬚ ⬚ ⬚ ▣ ▣ ▣ ▣ ⬚ ▣
 	 230   ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ▣
@@ -47,45 +47,45 @@
 	 290   ⬚ ▣ ⬚ ⬚ ▣ ⬚ ▣ ⬚ ▣ ▣
 	 300   ▣ ⬚ ⬚ ⬚ ⬚ ⬚ ▣ ⬚ ▣ ▣
 	 310   ⬚ ▣ ⬚ ⬚ ▣ ⬚ ⬚ ⬚ ▣ ⬚
-	 320   ▣ ▣ ⬚ ⬚ ⬚ ▣ ⬚ ⬚ ⬚ ⬚
+	 320   ▣ ▣ ⬚ ⬚ ⬚ ▣ ⬚ ⬚ ▣ ⬚
 	 330   ⬚ ▤ ⬚ ⬚ ▣ ▣ ▣ ▣ ▣ ⬚
 	 340   ▣ ⬚ ⬚ ▣ ⬚ ⬚ ▣ ⬚ ▣ ▣
 	 350   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
 	 360   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ▣ ⬚ ⬚ ⬚
-	 370   ⬚ ⬚ ⬚ ⬚ ▣ ▣ ⬚ ▣ ⬚ ▣
+	 370   ▣ ⬚ ⬚ ⬚ ▣ ▣ ⬚ ▣ ⬚ ▣
 	 380   ⬚ ⬚ ▣ ▣ ⬚ ⬚ ▣ ⬚ ▣ ▣
 	 390   ▤ ▣ ⬚ ▣ ⬚ ▣ ▣ ⬚ ⬚ ⬚
 	 400   ▣ ⬚ ⬚ ▣ ⬚ ▣ ⬚ ⬚ ⬚ ⬚
 	 410   ⬚ ▣ ▣ ▤ ⬚ ▣ ⬚ ⬚ ⬚ ▣
-	 420   ⬚ ⬚ ⬚ ⬚ ⬚          
-	 430     ⬚   ⬚ ⬚ ⬚ ▣ ▣ ⬚ ▣
+	 420   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
+	 430   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ▣ ▣ ⬚ ▣
 	 440   ⬚ ▣ ⬚ ⬚ ▣ ⬚ ⬚ ▣ ⬚ ▣
-	 450   ⬚ ⬚ ⬚ ⬚ ⬚ ▣     ⬚ ▣
-	 460   ▣ ▣ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚  
+	 450   ⬚ ⬚ ⬚ ⬚ ⬚ ▣ ▣ ⬚ ⬚ ▣
+	 460   ▣ ▣ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
 	 470   ⬚ ⬚ ▣ ⬚ ⬚ ▣ ⬚   ⬚ ⬚
-	 480   ⬚ ⬚ ⬚ ⬚ ▣ ▣ ⬚ ⬚   ⬚
+	 480   ⬚ ⬚ ⬚ ⬚ ▣ ▣ ⬚ ⬚ ⬚ ⬚
 	 490   ▣ ▣ ▣ ▣ ⬚ ⬚   ⬚ ⬚ ▣
 	 500   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚    
-	 510       ⬚ ⬚ ⬚ ⬚ ⬚     ▣
+	 510       ⬚ ⬚ ⬚ ⬚ ⬚ ⬚   ▣
 	 520   ⬚ ⬚ ▣ ⬚ ⬚ ⬚ ⬚   ⬚ ⬚
 	 530   ⬚ ⬚ ⬚   ⬚ ⬚ ⬚ ▣ ▣ ▣
 	 540   ⬚ ⬚ ▣ ⬚ ⬚ ⬚ ▣ ⬚ ⬚  
-	 550   ⬚ ⬚ ⬚ ▣ ⬚ ⬚ ▣     ▣
+	 550   ⬚ ⬚ ⬚ ▣ ⬚ ⬚ ▣ ⬚ ⬚ ▣
 	 560   ▣ ⬚ ▣ ▣ ⬚ ▣ ▣ ⬚ ⬚ ⬚
 	 570   ⬚ ▣ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
-	 580   ▣ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚    
+	 580   ▣ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
 	 590   ⬚ ⬚ ▣ ⬚ ⬚ ⬚ ⬚ ⬚ ▣ ⬚
 	 600   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
 	 610   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ▣ ⬚ ⬚ ⬚
-	 620   ▣   ▣ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
+	 620   ▣ ⬚ ▣ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
 	 630   ⬚ ▣ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
-	 640     ⬚ ⬚ ⬚ ⬚ ⬚ ▣ ⬚ ▣ ⬚
+	 640   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ▣ ⬚ ▣ ⬚
 	 650   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ▣ ▣ ▣ ⬚
 	 660   ⬚ ▣ ⬚ ⬚ ▣ ⬚ ▣ ⬚ ⬚ ▣
 	 670   ⬚ ⬚ ▣ ▣ ⬚ ⬚ ▣ ⬚ ⬚ ⬚
 	 680   ⬚ ⬚ ⬚ ▣ ⬚ ⬚ ⬚ ▣ ⬚ ⬚
-	 690   ⬚ ⬚ ▣ ⬚ ⬚ ⬚ ▣ ▣ ⬚  
-	 700                      
+	 690   ⬚ ⬚ ▣ ⬚ ⬚ ⬚ ▣ ▣ ⬚ ⬚
+	 700   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
 	 710   ⬚ ⬚ ⬚ ▣ ⬚ ⬚ ▣ ⬚ ⬚ ⬚
 	 720   ⬚ ⬚ ⬚ ⬚ ▣ ⬚ ⬚ ⬚ ⬚ ⬚
 	 730   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
@@ -98,7 +98,11 @@
 	 800   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
 	 810   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
 	 820   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
-	 830   ⬚  
+	 830   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
+	 840   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
+	 850   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
+	 860   ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚ ⬚
+	 870   ⬚ ⬚ ⬚ ⬚ ⬚  
 	
 	       ▣  Accepted   ▤  Not Accepted   ⬚  Remaining
 	
@@ -114,12 +118,15 @@
 |6 | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/6.zigzag-conversion.131497510.ac.cpp) |
 |7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/7.reverse-integer.136053344.ac.cpp) |
 |8 | [String to Integer Atoi](https://leetcode.com/problems/string-to-integer-atoi) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/8.string-to-integer-atoi.124199888.ac.cpp) |
+|9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/9.palindrome-number.163427835.ac.cpp) |
 |10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/10.regular-expression-matching.57779619.ac.cpp) |
 |11 | [Container with Most Water](https://leetcode.com/problems/container-with-most-water) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/11.container-with-most-water.121494693.ac.cpp) |
 |11 | [Container with Most Water](https://leetcode.com/problems/container-with-most-water) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/11.container-with-most-water.56468128.ac.cpp) |
+|12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/12.integer-to-roman.165570508.ac.cpp) |
 |13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/13.roman-to-integer.57095448.ac.cpp) |
 |14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/14.longest-common-prefix.139515013.ac.cpp) |
 |15 | [3sum](https://leetcode.com/problems/3sum) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/15.3sum.130159064.ac.cpp) |
+|16 | [3sum Closest](https://leetcode.com/problems/3sum-closest) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/16.3sum-closest.165498915.ac.cpp) |
 |17 | [Letter Combinations of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/17.letter-combinations-of-a-phone-number.134815657.ac.cpp) |
 |19 | [Remove Nth Node from End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/19.remove-nth-node-from-end-of-list.130279354.ac.cpp) |
 |20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/20.valid-parentheses.56446170.ac.cpp) |
@@ -127,13 +134,16 @@
 |22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/22.generate-parentheses.134414763.ac.cpp) |
 |23 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/23.merge-k-sorted-lists.55677459.ac.cpp) |
 |24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/24.swap-nodes-in-pairs.56452792.ac.cpp) |
+|25 | [Reverse Nodes in K Group](https://leetcode.com/problems/reverse-nodes-in-k-group) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/25.reverse-nodes-in-k-group.165568525.ac.cpp) |
 |26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/26.remove-duplicates-from-sorted-array.47160844.ac.cpp) |
+|27 | [Remove Element](https://leetcode.com/problems/remove-element) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/27.remove-element.165570983.ac.cpp) |
 |28 | [Implement Strstr](https://leetcode.com/problems/implement-strstr) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/28.implement-strstr.56447413.ac.cpp) |
 |29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/29.divide-two-integers.54974936.ac.cpp) |
 |30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/30.substring-with-concatenation-of-all-words.54761032.ac.cpp) |
 |31 | [Next Permutation](https://leetcode.com/problems/next-permutation) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/31.next-permutation.126335329.ac.cpp) |
 |32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/32.longest-valid-parentheses.55567700.ac.cpp) |
 |33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/33.search-in-rotated-sorted-array.134818914.ac.cpp) |
+|34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/34.find-first-and-last-position-of-element-in-sorted-array.134824008.ac.cpp) |
 |34 | [Search For A Range](https://leetcode.com/problems/search-for-a-range) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/34.search-for-a-range.134824008.ac.cpp) |
 |35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/35.search-insert-position.130159402.ac.cpp) |
 |36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/36.valid-sudoku.139516159.ac.cpp) |
@@ -170,7 +180,9 @@
 |73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/73.set-matrix-zeroes.126012851.ac.cpp) |
 |74 | [Search A 2d Matrix](https://leetcode.com/problems/search-a-2d-matrix) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/74.search-a-2d-matrix.126634969.ac.cpp) |
 |75 | [Sort Colors](https://leetcode.com/problems/sort-colors) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/75.sort-colors.123217251.ac.cpp) |
+|75 | [Sort Colors](https://leetcode.com/problems/sort-colors) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/75.sort-colors.164442924.ac.cpp) |
 |76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/76.minimum-window-substring.54861957.ac.cpp) |
+|77 | [Combinations](https://leetcode.com/problems/combinations) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/77.combinations.154581941.ac.cpp) |
 |78 | [Subsets](https://leetcode.com/problems/subsets) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/78.subsets.57960921.ac.cpp) |
 |79 | [Word Search](https://leetcode.com/problems/word-search) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/79.word-search.138624819.ac.cpp) |
 |80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/80.remove-duplicates-from-sorted-array-ii.125294798.ac.cpp) |
@@ -204,9 +216,11 @@
 |121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/121.best-time-to-buy-and-sell-stock.56905404.ac.cpp) |
 |122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/122.best-time-to-buy-and-sell-stock-ii.56908828.ac.cpp) |
 |124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/124.binary-tree-maximum-path-sum.55718611.ac.cpp) |
+|125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/125.valid-palindrome.164583469.ac.cpp) |
 |126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/126.word-ladder-ii.45649100.ac.cpp) |
 |128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/128.longest-consecutive-sequence.138456434.ac.cpp) |
 |129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/129.sum-root-to-leaf-numbers.124032080.ac.cpp) |
+|130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/130.surrounded-regions.164571105.ac.cpp) |
 |131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/131.palindrome-partitioning.129374797.ac.cpp) |
 |132 | [Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/132.palindrome-partitioning-ii.55091415.ac.cpp) |
 |134 | [Gas Station](https://leetcode.com/problems/gas-station) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/134.gas-station.124501210.ac.cpp) |
@@ -232,6 +246,7 @@
 |166 | [Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/166.fraction-to-recurring-decimal.56516510.ac.cpp) |
 |169 | [Majority Element](https://leetcode.com/problems/majority-element) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/169.majority-element.47084113.ac.cpp) |
 |171 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/171.excel-sheet-column-number.47084047.ac.cpp) |
+|172 | [Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/172.factorial-trailing-zeroes.164581873.ac.cpp) |
 |173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/173.binary-search-tree-iterator.57767022.ac.cpp) |
 |174 | [Dungeon Game](https://leetcode.com/problems/dungeon-game) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/174.dungeon-game.47339742.ac.cpp) |
 |179 | [Largest Number](https://leetcode.com/problems/largest-number) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/179.largest-number.56163290.ac.c) |
@@ -240,6 +255,7 @@
 |191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/191.number-of-1-bits.47113001.ac.cpp) |
 |198 | [House Robber](https://leetcode.com/problems/house-robber) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/198.house-robber.57705759.ac.cpp) |
 |200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/200.number-of-islands.56159050.ac.c) |
+|202 | [Happy Number](https://leetcode.com/problems/happy-number) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/202.happy-number.164578591.ac.cpp) |
 |206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/206.reverse-linked-list.47113340.ac.cpp) |
 |207 | [Course Schedule](https://leetcode.com/problems/course-schedule) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/207.course-schedule.56548133.ac.cpp) |
 |208 | [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/208.implement-trie-prefix-tree.137684270.ac.cpp) |
@@ -294,6 +310,7 @@
 |321 | [Create Maximum Number](https://leetcode.com/problems/create-maximum-number) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/321.create-maximum-number.54695503.ac.c) |
 |322 | [Coin Change](https://leetcode.com/problems/coin-change) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/322.coin-change.137837543.ac.cpp) |
 |326 | [Power of Three](https://leetcode.com/problems/power-of-three) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/326.power-of-three.124040011.ac.cpp) |
+|329 | [Longest Increasing Path in A Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/329.longest-increasing-path-in-a-matrix.164563661.ac.cpp) |
 |335 | [Self Crossing](https://leetcode.com/problems/self-crossing) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/335.self-crossing.56796144.ac.cpp) |
 |336 | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/336.palindrome-pairs.56018376.ac.cpp) |
 |337 | [House Robber III](https://leetcode.com/problems/house-robber-iii) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/337.house-robber-iii.57764525.ac.cpp) |
@@ -305,6 +322,7 @@
 |349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/349.intersection-of-two-arrays.129968869.ac.cpp) |
 |350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/350.intersection-of-two-arrays-ii.129968746.ac.cpp) |
 |367 | [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/367.valid-perfect-square.130298947.ac.cpp) |
+|371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/371.sum-of-two-integers.164577140.ac.cpp) |
 |375 | [Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/375.guess-number-higher-or-lower-ii.126167024.ac.cpp) |
 |376 | [Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/376.wiggle-subsequence.126019623.ac.cpp) |
 |378 | [Kth Smallest Element in A Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/378.kth-smallest-element-in-a-sorted-matrix.104228393.ac.cpp) |
@@ -333,6 +351,7 @@
 |448 | [Find All Numbers Disappeared in An Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/448.find-all-numbers-disappeared-in-an-array.137363126.ac.cpp) |
 |450 | [Delete Node in A Bst](https://leetcode.com/problems/delete-node-in-a-bst) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/450.delete-node-in-a-bst.124026445.ac.cpp) |
 |456 | [132 Pattern](https://leetcode.com/problems/132-pattern) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/456.132-pattern.123492842.ac.cpp) |
+|457 | [Circular Array Loop](https://leetcode.com/problems/circular-array-loop) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/457.circular-array-loop.121936123.ac.cpp) |
 |460 | [LFU Cache](https://leetcode.com/problems/lfu-cache) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/460.lfu-cache.103550682.ac.cpp) |
 |461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/461.hamming-distance.123865659.ac.cpp) |
 |462 | [Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii) | [My Answer](https://github.com/KKRainbow/LeetCode/blob/master/Accepted/462.minimum-moves-to-equal-array-elements-ii.136974133.ac.cpp) |
